@@ -28,7 +28,8 @@ export default tseslint.config({
 		'generator-star-spacing': 'off',
 		'object-curly-spacing': 0, // 强制在大括号中使用一致的空格
 		'array-bracket-spacing': 0, // 方括号
-		'prettier/prettier': 'off'
+		'prettier/prettier': 'off',
+		'vue/multi-word-component-names': 'off'
 	},
 	ignores: ['node_modules/', 'dist/', '*.min.js']
 });
