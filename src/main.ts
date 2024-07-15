@@ -1,14 +1,25 @@
 import { createApp } from 'vue';
-import Antd from 'ant-design-vue';
+import ElementPlus, { ElCollapseTransition } from 'element-plus';
 import App from './App.vue';
+import { setupRouter } from '../src/router';
 
 import './style.css';
-import 'ant-design-vue/dist/reset.css';
+import 'element-plus/theme-chalk/index.css';
 
-const test = 10;
+const setupApp = async () => {
+	const app = createApp(App);
 
-console.log(test);
+	// elementPlus 全局配置
+	app.use(ElementPlus, {
+		size: 'default',
+		zIndex: 3000
+	});
 
-const app = createApp(App);
+	// 按需导入 elementPlus 内置过渡动画
+	app.component(ElCollapseTransition.name, ElCollapseTransition);
 
-app.use(Antd).mount('#app');
+	setupRouter(app);
+	app.mount('#app');
+};
+
+setupApp();
