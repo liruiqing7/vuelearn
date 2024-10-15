@@ -29,7 +29,10 @@ export default tseslint.config({
 		'object-curly-spacing': 0, // 强制在大括号中使用一致的空格
 		'array-bracket-spacing': 0, // 方括号
 		'prettier/prettier': 'off',
-		'vue/multi-word-component-names': 'off'
+		'vue/multi-word-component-names': 'off',
+		'array-bracket-spacing': ['error', 'never'],
+		'object-curly-spacing': ['error', 'always'],
+		'@typescript-eslint/no-explicit-any': 'off'
 	},
 	ignores: ['node_modules/', 'dist/', '*.min.js']
 });

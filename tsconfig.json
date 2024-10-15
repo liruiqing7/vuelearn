@@ -9,6 +9,13 @@
 		}
 	],
 	"compilerOptions": {
-		"types": ["element-plus/global"]
+		"types": ["element-plus/global"],
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"noImplicitAny": false,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		}
 	}
 }

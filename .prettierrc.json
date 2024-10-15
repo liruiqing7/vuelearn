@@ -11,5 +11,13 @@
 	"htmlWhitespaceSensitivity": "ignore",
 	"vueIndentScriptAndStyle": false,
 	"endOfLine": "auto",
-	"singleAttributePerLine": false
+	"singleAttributePerLine": false,
+	"overrides": [
+		{
+			"files": "*.vue,*.ts",
+			"options": {
+				"parser": "typescript"
+			}
+		}
+	]
 }
