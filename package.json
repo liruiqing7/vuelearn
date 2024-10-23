@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --open",
-		"build": "NODE_ENV=production node --max_old_space_size=4096  vue-tsc -b && vite build",
+		"build": "NODE_ENV=production vue-tsc -b && vite build",
 		"preview": "vite preview",
 		"lint": "eslint src",
 		"fix": "eslint src --fix",
